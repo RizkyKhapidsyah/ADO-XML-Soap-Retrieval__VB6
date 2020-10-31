@@ -1,0 +1,5 @@
+- Clientdll folder contains the SOAP dll for the client
+- ADOXmlSoap Contains the Client Application
+- MyWebCOM folder contains the Server project. The project is in SoapComProject. The Compiled Dll sould be saved in the SoapCOM folder because I used static string to the DB directory.
+- MyDB Contains the database in the earlier format. DO NOT upgrade the mdb version cause it might gave problem to the ADO reading the database.
+- please read ReadMe.txt in the folder ADOXmlSoapClient for further details.

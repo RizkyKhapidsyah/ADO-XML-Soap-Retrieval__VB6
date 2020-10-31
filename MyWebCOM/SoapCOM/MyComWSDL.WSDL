@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+ <!-- Generated 05/07/02 by Microsoft SOAP Toolkit WSDL File Generator, Version 1.02.813.0 --> 
+<definitions  name ='MyComWSDL'   targetNamespace = 'http://tempuri.org/wsdl/'
+	 xmlns:wsdlns='http://tempuri.org/wsdl/' 
+	 xmlns:typens='http://tempuri.org/type' 
+	 xmlns:soap='http://schemas.xmlsoap.org/wsdl/soap/' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema' 
+	 xmlns:stk='http://schemas.microsoft.com/soap-toolkit/wsdl-extension'
+	 xmlns='http://schemas.xmlsoap.org/wsdl/'> 
+  <types>
+    <schema targetNamespace='http://tempuri.org/type'
+      xmlns='http://www.w3.org/2001/XMLSchema'
+      xmlns:SOAP-ENC='http://schemas.xmlsoap.org/soap/encoding/'
+      xmlns:wsdl='http://schemas.xmlsoap.org/wsdl/'
+      elementFormDefault='qualified'>
+    </schema>
+  </types>
+  <message name='DBService.SayHello'>
+  </message>
+  <message name='DBService.SayHelloResponse'>
+    <part name='Result' type='xsd:string'/>
+  </message>
+  <message name='DBService.GetLoaner'>
+  </message>
+  <message name='DBService.GetLoanerResponse'>
+    <part name='Result' type='xsd:string'/>
+  </message>
+  <message name='DBService.GetDebtor'>
+  </message>
+  <message name='DBService.GetDebtorResponse'>
+    <part name='Result' type='xsd:string'/>
+  </message>
+  <message name='DBService.GetStructDebtor'>
+  </message>
+  <message name='DBService.GetStructDebtorResponse'>
+    <part name='Result' type='xsd:string'/>
+  </message>
+  <message name='DBService.GetStructLoaner'>
+  </message>
+  <message name='DBService.GetStructLoanerResponse'>
+    <part name='Result' type='xsd:string'/>
+  </message>
+  <message name='DBService.ExecuteSql'>
+    <part name='sSql' type='xsd:string'/>
+  </message>
+  <message name='DBService.ExecuteSqlResponse'>
+    <part name='Result' type='xsd:short'/>
+    <part name='sSql' type='xsd:string'/>
+  </message>
+  <portType name='DBServiceSoapPort'>
+    <operation name='SayHello' parameterOrder=''>
+      <input message='wsdlns:DBService.SayHello' />
+      <output message='wsdlns:DBService.SayHelloResponse' />
+    </operation>
+    <operation name='GetLoaner' parameterOrder=''>
+      <input message='wsdlns:DBService.GetLoaner' />
+      <output message='wsdlns:DBService.GetLoanerResponse' />
+    </operation>
+    <operation name='GetDebtor' parameterOrder=''>
+      <input message='wsdlns:DBService.GetDebtor' />
+      <output message='wsdlns:DBService.GetDebtorResponse' />
+    </operation>
+    <operation name='GetStructDebtor' parameterOrder=''>
+      <input message='wsdlns:DBService.GetStructDebtor' />
+      <output message='wsdlns:DBService.GetStructDebtorResponse' />
+    </operation>
+    <operation name='GetStructLoaner' parameterOrder=''>
+      <input message='wsdlns:DBService.GetStructLoaner' />
+      <output message='wsdlns:DBService.GetStructLoanerResponse' />
+    </operation>
+    <operation name='ExecuteSql' parameterOrder='sSql'>
+      <input message='wsdlns:DBService.ExecuteSql' />
+      <output message='wsdlns:DBService.ExecuteSqlResponse' />
+    </operation>
+  </portType>
+  <binding name='DBServiceSoapBinding' type='wsdlns:DBServiceSoapPort' >
+    <stk:binding preferredEncoding='UTF-8'/>
+    <soap:binding style='rpc' transport='http://schemas.xmlsoap.org/soap/http' />
+    <operation name='SayHello' >
+      <soap:operation soapAction='http://tempuri.org/action/DBService.SayHello' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetLoaner' >
+      <soap:operation soapAction='http://tempuri.org/action/DBService.GetLoaner' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetDebtor' >
+      <soap:operation soapAction='http://tempuri.org/action/DBService.GetDebtor' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetStructDebtor' >
+      <soap:operation soapAction='http://tempuri.org/action/DBService.GetStructDebtor' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetStructLoaner' >
+      <soap:operation soapAction='http://tempuri.org/action/DBService.GetStructLoaner' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='ExecuteSql' >
+      <soap:operation soapAction='http://tempuri.org/action/DBService.ExecuteSql' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+  </binding>
+  <service name='MyComWSDL' >
+    <port name='DBServiceSoapPort' binding='wsdlns:DBServiceSoapBinding' >
+      <soap:address location='http://localhost/MyWebCOM/SoapCOM/MyComWSDL.ASP' />
+    </port>
+  </service>
+</definitions>

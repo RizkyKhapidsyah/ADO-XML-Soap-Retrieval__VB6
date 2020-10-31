@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+ <!-- Generated 05/07/02 by Microsoft SOAP Toolkit WSDL File Generator, Version 1.02.813.0 --> 
+<servicemapping name='MyComWSDL'>
+  <service name='MyComWSDL'>
+    <using PROGID='MyDll.DBService' cachable='0' ID='DBServiceObject' />
+    <port name='DBServiceSoapPort'>
+      <operation name='SayHello'>
+        <execute uses='DBServiceObject' method='SayHello' dispID='1610809344'>
+          <parameter callIndex='-1' name='retval' elementName='Result' />
+        </execute>
+      </operation>
+      <operation name='GetLoaner'>
+        <execute uses='DBServiceObject' method='GetLoaner' dispID='1610809345'>
+          <parameter callIndex='-1' name='retval' elementName='Result' />
+        </execute>
+      </operation>
+      <operation name='GetDebtor'>
+        <execute uses='DBServiceObject' method='GetDebtor' dispID='1610809346'>
+          <parameter callIndex='-1' name='retval' elementName='Result' />
+        </execute>
+      </operation>
+      <operation name='GetStructDebtor'>
+        <execute uses='DBServiceObject' method='GetStructDebtor' dispID='1610809347'>
+          <parameter callIndex='-1' name='retval' elementName='Result' />
+        </execute>
+      </operation>
+      <operation name='GetStructLoaner'>
+        <execute uses='DBServiceObject' method='GetStructLoaner' dispID='1610809348'>
+          <parameter callIndex='-1' name='retval' elementName='Result' />
+        </execute>
+      </operation>
+      <operation name='ExecuteSql'>
+        <execute uses='DBServiceObject' method='ExecuteSql' dispID='1610809349'>
+          <parameter callIndex='1' name='sSql' elementName='sSql' />
+          <parameter callIndex='-1' name='retval' elementName='Result' />
+        </execute>
+      </operation>
+    </port>
+  </service>
+</servicemapping>
+ 

@@ -1,0 +1,36 @@
+<xml xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:rs="urn:schemas-microsoft-com:rowset" xmlns:z="#RowsetSchema">
+	<s:Schema id="RowsetSchema">
+		<s:ElementType name="row" content="eltOnly">
+			<s:AttributeType name="DebtorKey" rs:number="1" rs:maydefer="true">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="DebtorCode" rs:number="2" rs:nullable="true" rs:maydefer="true" rs:writeunknown="true">
+				<s:datatype dt:type="string" rs:dbtype="str" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="DebtorDesc" rs:number="3" rs:nullable="true" rs:maydefer="true" rs:writeunknown="true">
+				<s:datatype dt:type="string" rs:dbtype="str" dt:maxLength="100"/>
+			</s:AttributeType>
+			<s:AttributeType name="DebtorDate" rs:number="4" rs:nullable="true" rs:maydefer="true" rs:writeunknown="true">
+				<s:datatype dt:type="dateTime" rs:dbtype="variantdate" dt:maxLength="16" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="DebtorAmount" rs:number="5" rs:nullable="true" rs:maydefer="true" rs:writeunknown="true">
+				<s:datatype dt:type="number" rs:dbtype="currency" dt:maxLength="8" rs:precision="19" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="StatusCode" rs:number="6" rs:nullable="true" rs:maydefer="true" rs:writeunknown="true">
+				<s:datatype dt:type="string" rs:dbtype="str" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:extends type="rs:rowbase"/>
+		</s:ElementType>
+	</s:Schema>
+	<rs:data>
+		<z:row DebtorKey="1" DebtorCode="Kakaa" DebtorDesc="Kak Pinjam buat beli kayu buat rumah" DebtorDate="2001-09-01T00:00:00" DebtorAmount="2000" StatusCode="Unpaid"/>
+		<z:row DebtorKey="2" DebtorCode="Anuaraa" DebtorDesc="Hutang Kereta Tipu" DebtorDate="2001-08-01T00:00:00" DebtorAmount="800" StatusCode="Unpaid"/>
+		<z:row DebtorKey="3" DebtorCode="aS" DebtorDesc="SDASD" DebtorDate="2001-01-01T00:00:00" DebtorAmount="56" StatusCode="Canceled"/>
+		<z:row DebtorKey="4" DebtorCode="Sapa" DebtorDesc="sapaaaa" DebtorDate="2002-01-02T00:00:00" DebtorAmount="2635.23" StatusCode="Canceled"/>
+		<z:row DebtorKey="5" DebtorCode="asd" DebtorDesc="sfsdfg" DebtorDate="2002-01-02T00:00:00" DebtorAmount="895.556" StatusCode="Canceled"/>
+		<z:row DebtorKey="6" DebtorCode="Zaidee" DebtorDesc="Hutang Nasik" DebtorDate="2002-01-10T00:00:00" DebtorAmount="3" StatusCode="Canceled"/>
+		<z:row DebtorKey="7" DebtorCode="Azhan ?" DebtorDesc="Azhan pinjam @ aku bagi free?" DebtorDate="2001-01-03T00:00:00" DebtorAmount="250" StatusCode="Unpaid"/>
+		<z:row DebtorKey="8" DebtorCode="Basri" DebtorDesc="Duit Air Api" DebtorDate="2002-01-03T00:00:00" DebtorAmount="100" StatusCode="Unpaid"/>
+		<z:row DebtorKey="10" DebtorCode="asd" DebtorDesc="asdasd" DebtorDate="2002-02-02T02:02:02" DebtorAmount="12.12" StatusCode="Paid"/>
+	</rs:data>
+</xml>
